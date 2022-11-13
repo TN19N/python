@@ -1,0 +1,13 @@
+# 1. Output a list of installed packages and their versions.
+    - conda list
+
+# 2. Show the package metadata of numpy.
+    - pip show numpy
+    * https://www.youtube.com/watch?v=Z6G07kVR0R8&ab_channel=AbhishekAgarrwal
+
+# 3. Remove the package numpy.
+    - pip uninstall numpy
+
+# 4. (Re)install the package numpy.
+    - install: pip install numpy
+    - reinstall: pip install --force-reinstall numpy
