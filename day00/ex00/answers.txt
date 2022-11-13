@@ -11,3 +11,9 @@
 # 4. (Re)install the package numpy.
     - install: pip install numpy
     - reinstall: pip install --force-reinstall numpy
+
+# 5. Freeze your python packages and their versions in a requirements.txt file you have to turn-in.
+    - pip list --format=freeze > requirements.txt
+    - install requirements in another environment : pip install --requirement requirements.txt
+    * https://www.youtube.com/watch?v=brWhYOzBfW8&ab_channel=KrishNaik (don't use pip freeze !!)
+    * https://stackoverflow.com/questions/61765502/pip-freeze-doesnt-show-package-version

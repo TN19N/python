@@ -30,3 +30,12 @@ $> conda activate 42AI-$USER
 ``` bash
     bash script.sh
 ```
+
+## Find the commands to: (see answers.txt file)
+``` 
+• Output a list of installed packages and their versions.
+• Show the package metadata of numpy.
+• Remove the package numpy.
+• (Re)install the package numpy.
+• Freeze your python packages and their versions in a requirements.txt file you have to turn-in.
+```
