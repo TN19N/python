@@ -5,10 +5,10 @@ if len(sys.argv) == 1 :
 elif len(sys.argv) > 2 :
     print("AssertionError: more than one argument are provided")
 else :
-    if sys.argv[0] == '-' or sys.argv[0] == '+' : 
-        sys.argv[0] = sys.argv[0][1:]
-    if sys.argv[0].isdigit() == True :
-        if int(sys.argv[0]) % 2 == 0 :
+    if len(sys.argv[1]) != 0 and sys.argv[1][0] == '-': 
+        sys.argv[1] = sys.argv[1][1:]
+    if sys.argv[1].isdigit() == True :
+        if int(sys.argv[1]) % 2 == 0 :
             print("I'm Even.")
         else :
             print("I'm Odd.")
