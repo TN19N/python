@@ -19,3 +19,14 @@ $> source ~/.bash_profile
 ``` bash
 $> conda create --name 42AI-$USER python=3.7 jupyter pandas pycodestyle numpy
 ```
+
+## 4. Check and Activate 42AI Python environment
+``` bash
+$> conda info --envs
+$> conda activate 42AI-$USER
+```
+
+## Conda automated installation (run script.sh)
+``` bash
+    bash script.sh
+```
