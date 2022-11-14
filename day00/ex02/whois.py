@@ -1,16 +1,12 @@
-import sys
+from sys import argv
 
-if len(sys.argv) == 1 :
-    print("Usage: python whois.py [number]")
-elif len(sys.argv) > 2 :
-    print("AssertionError: more than one argument are provided")
-else :
-    if len(sys.argv[1]) != 0 and sys.argv[1][0] == '-': 
-        sys.argv[1] = sys.argv[1][1:]
-    if sys.argv[1].isdigit() == True :
-        if int(sys.argv[1]) % 2 == 0 :
-            print("I'm Even.")
-        else :
-            print("I'm Odd.")
-    else:
-        print("AssertionError: argument is not an integer")
+if __name__ == '__main__' :
+    if len(argv) == 1 :
+        print("Usage: python whois.py [number]")
+    elif len(argv) > 2 :
+        print("AssertionError: more than one argument are provided")
+    else :
+        try:
+            print(f"I'm {'Zero' if int(argv[1]) == 0 else 'Odd' if int(argv[1]) % 2 == 1 else 'Even'}.")
+        except:
+            print("AssertionError: argument is not an integer")
