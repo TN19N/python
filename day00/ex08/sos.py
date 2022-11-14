@@ -1,4 +1,4 @@
-import sys
+from sys import argv
 
 MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
                     'C':'-.-.', 'D':'-..', 'E':'.',
@@ -15,14 +15,14 @@ MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
                     '0':'-----', ' ':'/'}
 
 if __name__ == '__main__' :
-    if len(sys.argv) == 1:
+    if len(argv) == 1:
         print('ERROR')
         exit(1)
 
-    allstring = ' '.join([arg for arg in sys.argv[1:]])
+    allstring = ' '.join(arg for arg in argv[1:])
 
     if not all(c.isalnum() or c.isspace() for c in allstring) :
         print('ERROR')
         exit(1)
 
-    print(' '.join([MORSE_CODE_DICT[c.upper()] for c in allstring]))
+    print(' '.join(MORSE_CODE_DICT[c.upper()] for c in allstring))
