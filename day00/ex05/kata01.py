@@ -1,9 +1,8 @@
 kata = {
     'Python': 'Guido van Rossum',
     'Ruby': 'Yukihiro Matsumoto',
-    'PHP': 'Rasmus Lerdorf',
+    'PHP': 'Rasmus Lerdorf'
 }
 
 if __name__ == '__main__' :
-    for key in kata :
-        print(f'{key} was created by {kata[key]}')
+    print(*[f'{key} was created by {kata[key]}' for key in kata], sep='\n')
