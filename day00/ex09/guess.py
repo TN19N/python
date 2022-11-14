@@ -1,24 +1,21 @@
 from random import randint
-from sys import stdin
 
 if __name__ == '__main__' :
     print('''\
-\
 This is an interactive guessing game!
 You have to enter a number between 1 and 99 to find out the secret number.
 Type 'exit' to end the game.
 Good luck!
-\
 ''')
 
     number = randint(1, 99)
     attempts = 0
 
     while True :
-        print("What's your guess between 1 and 99?\n>> ", end='')
-        cmd = stdin.readline()
+        try: cmd = input("What's your guess between 1 and 99?\n>> ")
+        except: cmd = 'exit'
         attempts += 1
-        if not cmd or cmd == 'exit' :
+        if cmd == 'exit' :
             print('Goodbye!')
             break
         elif not cmd.isdigit() :
