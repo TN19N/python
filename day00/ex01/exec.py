@@ -1,13 +1,7 @@
-import sys
+from sys import argv
 
-str = ""
-
-for i in range(1, len(sys.argv)):
-    if i != 1:
-        str += " "
-    str += sys.argv[i]
-
-if len(sys.argv) == 1 :
-    print("Usage: python exec.py [ARG 1] [ARG2] ... ")
-else :
-    print(f"{str[::-1].swapcase()}")
+if __name__ == '__main__' :
+    if len(argv) == 1 :
+        print("Usage: python exec.py [ARG 1] [ARG2] ... ")
+    else :
+        print(f"{' '.join(argv[1:])[::-1].swapcase()}")
