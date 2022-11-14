@@ -8,11 +8,7 @@ if __name__ == '__main__' :
         print('Usage: python operations.py <number1> <number2>\nExample:\n\tpython operations.py 10 3')
         exit(1)
 
-    A = 0
-    B = 0
-    try:
-        A = int(argv[1])
-        B = int(argv[2])
+    try: (A, B) = int(argv[1]), int(argv[2])
     except:
         print('AssertionError: only integers')
         exit(1)
