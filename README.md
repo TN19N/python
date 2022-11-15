@@ -6,4 +6,4 @@
 
 ---
 
-### • day 02 (The goal of the day is ontinue practicing with more advanced Python programming exercises. Destination: Decorators, lambda, context manager and build package.)
+#### • day 02 (The goal of the day is ontinue practicing with more advanced Python programming exercises. Destination: Decorators, lambda, context manager and build package.)
