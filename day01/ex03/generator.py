@@ -1,4 +1,3 @@
-
 from random import randint
 
 def generator(text, sep=" ", option=None):
@@ -23,13 +22,7 @@ def generator(text, sep=" ", option=None):
             del words[r]
         words = new
     elif option == 'unique':
-        i = 0
-        while True :
-            if i >= len(words) :
-                break
-            if words.count(words[i]) > 1 :
-                del words[i]
-            i += 1
+        words = list(set(words))
     elif option == 'ordered':
         words.sort()
 
