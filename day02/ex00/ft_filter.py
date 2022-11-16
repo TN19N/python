@@ -16,4 +16,3 @@ def ft_filter(function_to_apply, iterable):
     for element in iterable :
         if function_to_apply(element) is True:
             yield element
-    
