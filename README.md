@@ -6,4 +6,8 @@
 
 ---
 
-#### • day 02 (The goal of the day is ontinue practicing with more advanced Python programming exercises. Destination: Decorators, lambda, context manager and build package.)
+#### • day 02 (The goal of the day is continue practicing with more advanced Python programming exercises. Destination: Decorators, lambda, context manager and build package.)
+
+---
+
+#### • day 03 (The goal of the day is to use the Python library that will allow you to manipulate multidimensional arrays (vectors) and perform complex mathematical operations on them.)
