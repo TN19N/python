@@ -20,7 +20,6 @@ class NumpyCreator :
     
     def from_iterable(self, itr, dtype = float) :
         try :
-
             return np.fromiter(itr, dtype = dtype)
         except :
             return None
