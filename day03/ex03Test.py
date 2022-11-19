@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 if __name__ == '__main__' :
     
     imp = ImageProcessor()
-    arr = imp.load("./resources/elon_canaGAN.png")
+    arr = imp.load("./data/elon_canaGAN.png")
     cf = ColorFilter()
     
     images = [(arr, 'originale')]
