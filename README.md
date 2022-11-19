@@ -11,3 +11,8 @@
 ---
 
 #### • day 03 (The goal of the day is to use the Python library that will allow you to manipulate multidimensional arrays (vectors) and perform complex mathematical operations on them.)
+
+-- 
+
+#### • day 04 (The goal of the day is to learn how to use a Python library that will allow you to manipulate dataframes.)
+
