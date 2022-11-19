@@ -1,7 +1,7 @@
 import pandas
 
 class FileLoader :
-    
+
     def load(self, path) :
         try :
             data = pandas.read_csv(path)
