@@ -24,7 +24,9 @@ The text contains {len(string)} character(s):
 ''')
 
 if __name__ == '__main__' :
-    if len(sys.argv) < 3 :
+    if len(sys.argv) == 1 :
+        text_analyzer()
+    elif len(sys.argv) == 2 :
         text_analyzer(''.join(sys.argv[1:]))
     else :
         print("Usage: python count.py [string](optional)")
