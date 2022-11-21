@@ -1,8 +1,11 @@
 from string import punctuation
-from sys import argv
+import sys
 
 def text_analyzer(string = None):
-    """\n\tThis function counts the number of upper characters, lower characters,\n\tpunctuation and spaces in a given text."""
+    """
+    This function counts the number of upper characters, lower characters,
+    punctuation and spaces in a given text.
+    """
 
     if string == None :
         try: string = input('What is the text to analyze?\n>> ')
@@ -21,8 +24,8 @@ The text contains {len(string)} character(s):
 ''')
 
 if __name__ == '__main__' :
-    if len(argv) < 3 :
-        text_analyzer(''.join(argv[1:]))
+    if len(sys.argv) < 3 :
+        text_analyzer(''.join(sys.argv[1:]))
     else :
         print("Usage: python count.py [string](optional)")
         exit(1)

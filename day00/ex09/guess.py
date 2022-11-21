@@ -1,4 +1,4 @@
-from random import randint
+import random
 
 if __name__ == '__main__' :
     print('''\
@@ -8,7 +8,7 @@ Type 'exit' to end the game.
 Good luck!
 ''')
 
-    number = randint(1, 99)
+    number = random.randint(1, 99)
     attempts = 0
 
     while True :

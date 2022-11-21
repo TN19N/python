@@ -1,14 +1,14 @@
-from sys import argv
+import sys
 
 if __name__ == '__main__' :
-    if len(argv) > 3 :
+    if len(sys.argv) > 3 :
         print('AssertionError: too many arguments')
         exit(1)
-    if len(argv) < 3 :
+    if len(sys.argv) < 3 :
         print('Usage: python operations.py <number1> <number2>\nExample:\n\tpython operations.py 10 3')
         exit(1)
 
-    try: (A, B) = int(argv[1]), int(argv[2])
+    try: (A, B) = int(sys.argv[1]), int(sys.argv[2])
     except:
         print('AssertionError: only integers')
         exit(1)
