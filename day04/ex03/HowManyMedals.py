@@ -10,12 +10,3 @@ def how_many_medals(data, name) :
                 mid[medel[0]] += 1
         dec[str(year)] = mid
     return dec
-    
-from FileLoader import FileLoader
-    
-if __name__ == '__main__' :
-    loader = FileLoader()
-    data = loader.load('../data/athlete_events.csv')
-    res = how_many_medals(data, 'Larisa Latynina')
-    for i in res :
-        print(i, res[i])

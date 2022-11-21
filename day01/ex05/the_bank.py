@@ -16,7 +16,7 @@ class Account(object):
         if not isinstance(self.name, str) :
             raise AttributeError("Attribute name must be a str object.")
 
-    def transfer(self, amount) : 
+    def transfer(self, amount) :
         self.value += amount
 
 class Bank(object): 

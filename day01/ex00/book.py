@@ -29,4 +29,3 @@ class Book:
         """Add a recipe to the book and update last_update"""
         self.recipes_list[recipe.recipe_type].append(recipe)
         self.last_update = datetime.now()
-    
