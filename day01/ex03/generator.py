@@ -9,7 +9,7 @@ def generator(text, sep=" ", option=None):
         or type(sep) != str \
         or not option in [None, 'shuffle', 'unique', 'ordered'] \
         or not text.isprintable() :
-        yield 'Error'
+        yield 'ERROR'
         return
 
     words = text.split(sep)

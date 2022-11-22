@@ -57,6 +57,12 @@ if __name__ == '__main__' :
     print(Vector([[0.0], [1.0], [2.0], [3.0]]).values) 
     # Expected output
     # [[0.0], [1.0], [2.0], [3.0]]
+    
+    print(f'\n-------------[Vector().values]--------------\n')
+    
+    print(Vector([[0.0, 1.0, 2.0, 3.0]]).values) 
+    # Expected output
+    # [[0.0, 1.0, 2.0, 3.0]]
 
     print(f'\n-------------[Vector().shape]--------------\n')
 
