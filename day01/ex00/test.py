@@ -1,6 +1,5 @@
 from recipe import Recipe
 from book import Book
-
 if __name__ == '__main__':
 
     try: 
