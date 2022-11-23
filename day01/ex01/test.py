@@ -12,4 +12,4 @@ if __name__ == '__main__':
     
     arya.die()
     
-    print(arya.is_alive)
+    print(arya.is_alive) 

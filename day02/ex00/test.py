@@ -5,8 +5,8 @@ from ft_reduce import ft_reduce
 
 if __name__ == '__main__' :
 
-    
     x = [1, 2, 3, 4, 5]
+
     print(ft_map(lambda dum: dum + 1, x))
 
     print(list(ft_map(lambda t: t + 1, x)))
