@@ -1,4 +1,7 @@
-import math
+import  math
+
+X_TURN  = 1
+O_TURN  = 2
 
 X_WIN   = 1
 O_WIN   = 2
@@ -33,7 +36,7 @@ def minimax(game, maximizingPlayer) :
 # Agent Have O Mark
 class Agent :
       
-    def play(game) :
+    def playMiniMax(game) :
         bestMove = (0, 0)
         maxScore = -math.inf
         
@@ -48,3 +51,9 @@ class Agent :
                         bestMove = (x, y)
 
         return bestMove
+    
+    def playGenetic(game) :
+        pass
+    
+    def playMonteCarlo(game) :
+        pass
